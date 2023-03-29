@@ -46,8 +46,8 @@ function pretvoriUnos() {
     return dan;
 }
 
-console.log(pretvoriUnos(1))
-console.log(pretvoriUnos(5))
+console.log(pretvoriUnos(1));
+console.log(pretvoriUnos(5));
 
 //3 (4 BODA)
 //Napisi funkciju koja okrece uneseni string i broji charactere ne uzimajuci u obzir prazna mjesta (eng. whitespaces)
@@ -72,6 +72,9 @@ console.log(okreniString("Pisanje zadatka nije jednostavan posao"));
 
 //4 (4 BODA)
 //Napisi funkciju koja vraca najkraci kljuc u danom objektu
+//INPUT: somePeople
+//OUTPUT: "Ada"
+
 const somePeople = {
     Donald: "Knuth",
     Bjarne: "Stroustrup",
@@ -80,8 +83,21 @@ const somePeople = {
     Martin: "Fowler",
     Erich: "Gamma"
 }
-//INPUT: somePeople
-//OUTPUT: "Ada"
+
+function dajNajKraciKljuc(obj) {
+    let najKraciKljuc = Object.keys(obj)[0];
+
+    for (const key in obj) {
+        if (key.length < najKraciKljuc.length) {
+            najKraciKljuc = key;
+        }
+    }
+
+    return najKraciKljuc;
+}
+
+console.log(dajNajKraciKljuc(somePeople));
+
 
 //5 (4 BODA)
 //Napisi funkciju u obliku function expressiona koja vraca proste brojeve
