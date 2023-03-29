@@ -68,9 +68,7 @@ function okreniString(string) {
     return (okrenutiString, brojCharactera);
 }
 
-const input = "Pisanje zadatka nije jednostavan posao";
-const output = okreniIBroj(input);
-console.log(output);
+console.log(okreniString("Pisanje zadatka nije jednostavan posao"));
 
 //4 (4 BODA)
 //Napisi funkciju koja vraca najkraci kljuc u danom objektu
