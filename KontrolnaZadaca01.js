@@ -96,8 +96,7 @@ function dajNajKraciKljuc(obj) {
     return najKraciKljuc;
 }
 
-console.log(dajNajKraciKljuc(somePeople));
-
+console.log(dajNajKraciKljuc(somePeople))
 
 //5 (4 BODA)
 //Napisi funkciju u obliku function expressiona koja vraca proste brojeve
