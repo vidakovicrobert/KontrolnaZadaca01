@@ -46,17 +46,32 @@ function pretvoriUnos() {
     return dan;
 }
 
-console.log(pretvoriUnos(1));
-console.log(pretvoriUnos(5);
+console.log(pretvoriUnos(1))
+console.log(pretvoriUnos(5))
 
 //3 (4 BODA)
 //Napisi funkciju koja okrece uneseni string i broji charactere ne uzimajuci u obzir prazna mjesta (eng. whitespaces)
 //INPUT: "Pisanje zadataka nije jednostavan posao";
 //OUTPUT: ("oasop navatsondej ejin akatadaz ejnasiP", 35)
 
-function okreniString(params) {
+function okreniString(string) {
+    let okrenutiString = "";
+    let brojCharactera = 0;
 
+    for (let i = string.length - 1; i >= 0; i--) {
+        if (string[i] !== " ") {
+            okrenutiString += string[i];
+            brojCharactera++;
+        }
+    }
+
+    return (okrenutiString, brojCharactera);
 }
+
+const input = "Pisanje zadatka nije jednostavan posao";
+const output = okreniIBroj(input);
+console.log(output);
+
 //4 (4 BODA)
 //Napisi funkciju koja vraca najkraci kljuc u danom objektu
 const somePeople = {
