@@ -15,9 +15,39 @@ console.log(ispisiParneBrojeve())
 //INPUT: 5; OUTPUT: "Petak"; 
 
 function pretvoriUnos() {
+    let dan;
 
+    switch (dan) {
+        case 1:
+            dan = "Ponedjeljak";
+            break;
+        case 2:
+            dan = "Utorak";
+            break;
+        case 3:
+            dan = "Srijeda";
+            break;
+        case 4:
+            dan = "Četvrtak";
+            break;
+        case 5:
+            dan = "Petak";
+            break;
+        case 6:
+            dan = "Subota";
+            break;
+        case 7:
+            dan = "Nedjelja";
+            break;
+        default:
+            dan = "Neispravan unos";
+    }
 
+    return dan;
 }
+
+console.log(pretvoriUnos(1));
+console.log(pretvoriUnos(5);
 
 //3 (4 BODA)
 //Napisi funkciju koja okrece uneseni string i broji charactere ne uzimajuci u obzir prazna mjesta (eng. whitespaces)
